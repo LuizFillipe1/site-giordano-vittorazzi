@@ -32,7 +32,7 @@ console.log('Altura da tela: ' + alturaTela + ' pixels');
 
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-depoimentos-container', {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 10,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
             delay: 3000, // Tempo em milissegundos entre as transições
             disableOnInteraction: false // Permite que a reprodução automática continue mesmo se o usuário interagir com o carrossel
         },
-        loop: true,
+        // loop: true,
+
         effect: 'fade', // Adiciona um efeito de fade
         fadeEffect: {
             crossFade: true // Ativa a transição de fade

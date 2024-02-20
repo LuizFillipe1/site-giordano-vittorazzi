@@ -41,7 +41,7 @@ header {
 body {
     /* overflow-x: hidden; */
     /*   */
-    overflow: hidden;
+
 }
 
 /* Navbar */
@@ -225,6 +225,30 @@ main {
 
 .depoimentos-container {
     height: 90vh;
+    position: relative;
+
+}
+
+/* #swiper-wrapper-center {
+    position: relative;
+
+} */
+/* .swiper-depoimentos-container {
+
+    margin: 1rem 2rem auto;
+}
+
+.swiper-slide {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.swiper-depoimentos-container {
+    margin: 0 auto;
+    position: relative;
 }
 
 .text-div h2 {
@@ -239,11 +263,103 @@ main {
 
 .text-div {
     max-width: 400px;
+    height: auto;
     margin: 0 auto;
+    margin-top: 5rem;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* duvidas */
+.faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: space-between;
+
+}
+
+.faq-question {
+    padding: 20px 0;
+    border-bottom: 1px dotted #949494;
+    max-width: 90vh;
+}
+
+.panel-title {
+    color: #5a5a5a;
+    font-size: 1.1rem;
+    width: 70vh;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+}
+
+.panel-content {
+
+    color: #949494;
+    font-size: 1rem;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.panel:checked~.panel-content {
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+}
+
+/* icone */
+.plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.panel:checked~.plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: none;
 }
