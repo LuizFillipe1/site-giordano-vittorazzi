@@ -164,9 +164,7 @@ main {
 
 /* Projetos */
 
-.project-name {
-    display: none;
-}
+
 
 .gallery-container {
     display: flex;
@@ -181,7 +179,6 @@ main {
 
     /* width: 340px;
     height: 250px; */
-
 
     width: 260px;
     height: 180px;
@@ -204,6 +201,7 @@ main {
 }
 
 .project-name {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -246,12 +244,11 @@ main {
 
 } */
 
-.swiper-depoimentos-container {
-    margin: 0 auto;
-    position: relative;
-}
+.swiper-depoimentos-container {}
 
-.text-div h2 {
+
+
+/* .text-div h2 {
     margin-bottom: 5px;
     color: #333;
 }
@@ -260,7 +257,7 @@ main {
     font-style: italic;
     color: #777;
 }
-
+*/
 .text-div {
     max-width: 400px;
     height: auto;
