@@ -23,7 +23,7 @@
 //         }
 //     });
 // });
-var swiper = new Swiper('.swiper-home-container', {
+var swiper = new Swiper('.home-swiper-container', {
     slidesPerView: 3,
     spaceBetween: 10,
     centeredSlides: true,
@@ -41,14 +41,11 @@ var swiper = new Swiper('.swiper-home-container', {
     },
     effect: 'coverflow',
     coverflowEffect: {
-        rotate: 30,
+        rotate: 0,
         slideShadows: false,
     },
     loop: true,
 });
-
-
-
 
 
 // Script depoimentos
@@ -58,7 +55,7 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 20,
+        delay: 2000,
         pauseOnMouseEnter: true,
     },
     pagination: {
@@ -71,7 +68,7 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
     },
     effect: 'coverflow',
     coverflowEffect: {
-        rotate: 30,
+        rotate: 0,
         slideShadows: false,
     },
 });

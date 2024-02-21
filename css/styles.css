@@ -41,6 +41,10 @@ header {
 body {
     /* overflow-x: hidden; */
     /*   */
+    /* margin: 0;
+    padding: 0;
+    height: 100%; */
+    /* overflow: hidden; */
 
 }
 
@@ -85,7 +89,14 @@ main {
     /* padding-top: 1rem; */
 }
 
-.swiper-container {
+/* .container-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* gap: 20px;
+    padding: 20px; 
+}*/
+
+.home-swiper-container {
 
     margin: 0 auto;
     margin-top: 1rem;
@@ -95,7 +106,8 @@ main {
 }
 
 .swiper-wrapper {
-    height: 80vh;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -147,24 +159,28 @@ main {
 
 .services-container {
     display: flex;
-    padding: 2rem 2.5rem;
-    max-width: 1200px;
+    /* padding: 2rem 2.5rem; */
+    padding-top: 1rem;
+    max-width: 90%;
+    max-height: 90vh;
     margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.services-text h2 {
+/* .services-text h2 {
     margin-bottom: 1rem;
     margin-top: 1rem;
-}
+} */
 
 .services-text p {
-    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
 /* Projetos */
-
-
 
 .gallery-container {
     display: flex;
@@ -248,7 +264,7 @@ main {
 
 
 
-/* .text-div h2 {
+.text-div h2 {
     margin-bottom: 5px;
     color: #333;
 }
@@ -257,7 +273,7 @@ main {
     font-style: italic;
     color: #777;
 }
-*/
+
 .text-div {
     max-width: 400px;
     height: auto;
@@ -271,28 +287,18 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* duvidas */
 .faq-content {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    align-content: space-between;
-
 }
 
 .faq-question {
-    padding: 20px 0;
+    flex: 0 0 calc(50% - 20px);
+    /* Duas colunas com margem entre elas */
+    box-sizing: border-box;
+    padding: 20px;
     border-bottom: 1px dotted #949494;
     max-width: 90vh;
 }
@@ -300,7 +306,8 @@ main {
 .panel-title {
     color: #5a5a5a;
     font-size: 1.1rem;
-    width: 70vh;
+    width: 100%;
+    /* Ajuste para ocupar toda a largura da faq-question */
     position: relative;
     margin: 0;
     padding: 10px 10px 0 48px;
@@ -309,11 +316,10 @@ main {
 }
 
 .panel-content {
-
     color: #949494;
     font-size: 1rem;
     padding: 0px 14px;
-    margin: 0 40px;
+    margin: 0;
     height: 0;
     overflow: hidden;
     z-index: -1;
@@ -331,7 +337,6 @@ main {
     padding: 14px;
 }
 
-/* icone */
 .plus {
     position: absolute;
     margin-left: 20px;
@@ -359,4 +364,12 @@ main {
 
 .panel {
     display: none;
+}
+
+/* Adaptação para tela menor (por exemplo, tablet ou celular) */
+@media screen and (max-width: 768px) {
+    .faq-question {
+        flex: 0 0 100%;
+        /* Uma coluna em telas menores */
+    }
 }

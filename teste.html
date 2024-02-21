@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiper com Layout de Grid</title>
+    <title>Swiper com Imagens Centralizadas</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         body {
@@ -19,13 +19,17 @@
             padding: 20px;
         }
 
-        .swiper-container {
+        .meu-swiper-container {
             width: 100%;
+            display: flex;
+            justify-content: center;
+            /* Centraliza o swiper horizontalmente */
+            align-items: center;
+            /* Centraliza o swiper verticalmente */
         }
 
-        .swiper-slide {
+        .meu-swiper-slide {
             background-color: #f9f9f9;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -33,20 +37,31 @@
             align-items: center;
             font-size: 24px;
         }
+
+        .swiper-slide img {
+            max-width: 100%;
+            /* Garante que a imagem não ultrapasse a largura do slide */
+            height: auto;
+            /* Mantém a proporção da imagem */
+            display: block;
+            /* Remove espaços indesejados abaixo da imagem */
+            margin: 0 auto;
+            /* Centraliza a imagem horizontalmente dentro do slide */
+        }
     </style>
 </head>
 
 <body>
 
     <div class="grid-container">
-        <div class="swiper-container">
+        <div class="meu-swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">1</div>
-                <div class="swiper-slide">2</div>
-                <div class="swiper-slide">3</div>
-                <div class="swiper-slide">4</div>
-                <div class="swiper-slide">5</div>
-                <div class="swiper-slide">6</div>
+                <div class="swiper-slide meu-swiper-slide"><img src="https://via.placeholder.com/300" alt="Imagem 1">
+                </div>
+                <div class="swiper-slide meu-swiper-slide"><img src="https://via.placeholder.com/300" alt="Imagem 2">
+                </div>
+                <div class="swiper-slide meu-swiper-slide"><img src="https://via.placeholder.com/300" alt="Imagem 3">
+                </div>
                 <!-- Adicione mais divs conforme necessário -->
             </div>
             <div class="swiper-pagination"></div>
@@ -56,13 +71,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
+            var meuSwiper = new Swiper('.meu-swiper-container', {
                 slidesPerView: 3, // Número de slides visíveis
                 spaceBetween: 20, // Espaço entre os slides
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                wrapperClass: 'swiper-wrapper', // Nome personalizado para o wrapper
             });
         });
     </script>
