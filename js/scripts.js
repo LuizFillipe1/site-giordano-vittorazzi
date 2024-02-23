@@ -54,14 +54,14 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
     slidesPerView: 3,
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: {
-        delay: 2000,
-        pauseOnMouseEnter: true,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     pauseOnMouseEnter: true,
+    // },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -91,3 +91,4 @@ galleryItems.forEach(item => {
         hoverText.style.display = 'none';
     });
 });
+
