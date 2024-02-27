@@ -47,6 +47,12 @@ var swiper = new Swiper('.home-swiper-container', {
     loop: true,
 });
 
+// const myCarouselElement = document.querySelector('#carouselExampleFade')
+
+// const carousel = new bootstrap.Carousel(myCarouselElement, {
+//     interval: 7000,
+
+// })
 
 // Script depoimentos
 

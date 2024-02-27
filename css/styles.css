@@ -93,6 +93,9 @@ main {
     /* gap: 20px;
     padding: 20px; 
 }*/
+#container-home {
+    width: 90vh;
+}
 
 .home-swiper-container {
 
@@ -115,6 +118,10 @@ main {
     object-fit: cover;
 
 
+}
+
+.carousel-item img {
+    /* max-width: 90vh; */
 }
 
 /* perfil.html */
