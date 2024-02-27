@@ -24,11 +24,11 @@
 //     });
 // });
 var swiper = new Swiper('.home-swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 10,
-    centeredSlides: true,
+
     autoplay: {
-        delay: 2000,
+        delay: 2500,
         // pauseOnMouseEnter: true,
     },
     pagination: {
@@ -39,27 +39,28 @@ var swiper = new Swiper('.home-swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    effect: 'coverflow',
-    coverflowEffect: {
-        rotate: 0,
-        slideShadows: false,
-    },
+
+    effect: 'fade',
+    crossFade: true,
+
     loop: true,
 });
 
-// const myCarouselElement = document.querySelector('#carouselExampleFade')
+// const myCarouselElement = document.querySelector('#carousel')
 
 // const carousel = new bootstrap.Carousel(myCarouselElement, {
-//     interval: 7000,
-
+//     interval: 7,
 // })
 
 // Script depoimentos
 
 var swiper = new Swiper('.swiper-depoimentos-container', {
     slidesPerView: 3,
-    spaceBetween: 30,
-    centeredSlides: true,
+    spaceBetween: 10,
+    initialSlide: 2,
+    // centeredSlides: true,
+
+
     // autoplay: {
     //     delay: 2000,
     //     pauseOnMouseEnter: true,
@@ -72,11 +73,7 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    effect: 'coverflow',
-    coverflowEffect: {
-        rotate: 0,
-        slideShadows: false,
-    },
+    // loop: true,
 });
 
 
