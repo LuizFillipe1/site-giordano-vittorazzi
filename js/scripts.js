@@ -27,10 +27,10 @@ var swiper = new Swiper('.home-swiper-container', {
     slidesPerView: 1,
     spaceBetween: 10,
 
-    // autoplay: {
-    //     delay: 2500,
-    //     // pauseOnMouseEnter: true,
-    // },
+    autoplay: {
+        delay: 2500,
+        // pauseOnMouseEnter: true,
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -40,8 +40,11 @@ var swiper = new Swiper('.home-swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 
+
     effect: 'fade',
-    crossFade: true,
+    fadeEffect: {
+        crossFade: true
+    },
 
     loop: true,
 });
@@ -95,3 +98,9 @@ galleryItems.forEach(item => {
     });
 });
 
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true,
+
+})

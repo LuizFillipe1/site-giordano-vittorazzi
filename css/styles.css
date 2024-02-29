@@ -129,6 +129,7 @@ main {
 .swiper-wrapper img {
     height: 89vh;
     margin-top: 5px;
+    border-radius: 0.4rem;
 
 }
 
