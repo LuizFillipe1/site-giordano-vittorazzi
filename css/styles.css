@@ -127,7 +127,9 @@ main {
 } */
 
 .swiper-wrapper img {
-    height: 90vh;
+    height: 89vh;
+    margin-top: 5px;
+
 }
 
 
@@ -294,12 +296,17 @@ main {
 } */
 
 
-.swiper-slider {
+.my-swiper-slide-dep {
+    height: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+/* #swiper-wrapper-center {
+    display: flex;
+} */
 
 .depoimentos-container {
     height: 88vh;
@@ -333,6 +340,7 @@ main {
     /* height: auto;
     margin: 0 auto;
     margin-top: 2rem; */
+
 
     background-color: #f9f9f9;
     padding: 20px;
@@ -379,8 +387,8 @@ main {
 .faq-question {
     /* flex: 0 0 calc(50% - 20px); */
     /* Duas colunas com margem entre elas */
-    box-sizing: border-box;
-    padding: 0.7rem;
+    max-width: 90vw;
+
 
     /* max-width: 90vh; */
 }
@@ -391,25 +399,22 @@ main {
 }
 
 .panel-title {
-    color: #5a5a5a;
-
+    color: #555;
+    margin-left: 40px;
     font-size: 1.1rem;
     width: 100%;
     /* Ajuste para ocupar toda a largura da faq-question */
     position: relative;
-    margin: 0;
-    padding: 5px 5px 0 48px;
     display: block;
     cursor: pointer;
+    padding-top: 0.9rem;
 }
 
 .panel-content {
-    color: #949494;
+    color: #555;
     font-size: 1rem;
-    padding: 0px 14px;
-    margin: 0;
-    margin-left: 2rem;
-
+    margin-left: 40px;
+    padding-top: 2px;
     height: 0;
     overflow: hidden;
     z-index: -1;
@@ -424,11 +429,18 @@ main {
 .panel:checked~.panel-content {
     height: auto;
     opacity: 1;
-    padding: 14px;
-
+    padding: 1px;
+    color: #303030;
 }
 
-.plus {
+.panel:checked~.panel-title {
+    opacity: 1;
+    color: #303030;
+}
+
+
+
+/* .plus {
     position: absolute;
     margin-left: 20px;
     margin-top: 4px;
@@ -444,16 +456,16 @@ main {
     -moz-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
-    color: #949494;
-}
+    color: #555;
+} */
 
-.panel:checked~.plus {
+/* .panel:checked~.plus {
 
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-}
+} */
 
 .panel {
     display: none;
@@ -465,15 +477,17 @@ main {
 /* Contato */
 
 .form-container {
-    padding: 2.5rem;
-    margin-top: 16rem;
-
+    height: 100%;
 }
 
-.contato-container {
+.col-contato-container {
+    height: 90vh;
+}
+
+/* .contato-container {
     height: 85vh;
     width: auto;
-}
+} */
 
 .form-message textarea {
     max-width: 400px;
@@ -524,6 +538,27 @@ button {
 button:hover {
     color: #5a5a5a;
     font-weight: bold;
+}
+
+
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
 }
 
 /* Adaptação para tela menor (por exemplo, tablet ou celular) */
