@@ -431,12 +431,14 @@ main {
     height: auto;
     opacity: 1;
     padding: 1px;
-    color: #303030;
+    /* color: #303030; */
+    color: #000;
 }
 
 .panel:checked~.panel-title {
     opacity: 1;
-    color: #303030;
+    /* color: #303030; */
+    color: #000;
 }
 
 
