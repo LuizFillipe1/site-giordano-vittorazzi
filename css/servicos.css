@@ -1,20 +1,16 @@
-/* Services */
-/* gio centralizar a div totalmente na vertical */
-/* ALINHAR OS PARAGRAFOS COM A LOGO */
-/* deixar o h2 proximo do p */
 .services-container {
     display: flex;
     /* padding: 2rem 2.5rem; */
     padding-top: 1rem;
-    max-width: 100%;
-    max-height: 90vh;
+    /* max-width: 100%; */
+    /* max-height: 90vh; */
     /* margin: 0 auto; */
     margin-left: 2.5rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-right: 2.5rem;
     /* GAMBIARRA*/
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .services-text h2 {
@@ -33,3 +29,19 @@
     color: #555;
 
 }
+
+/* @media (min-width: 1500px) and (max-height: 750px) {
+    .services-container {
+        overflow: hidden;
+        overflow-x: hidden;
+
+    }
+} */
+
+/* @media (max-width: 767.98px) {
+    .services-container {
+        max-height: none;
+
+    }
+
+} */
