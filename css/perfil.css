@@ -1,13 +1,18 @@
 /* perfil.html */
 
 .row {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90vh;
+    --bs-gutter-x: 0rem;
+}
+
+.col-md-5 {
+    padding: 0;
 }
 
 .profile-container {
     height: 90vh;
-    max-width: 90vw;
+    width: auto;
 }
 
 
@@ -36,40 +41,20 @@
     text-transform: uppercase;
 }
 
-/* Services */
-/* gio centralizar a div totalmente na vertical */
-/* ALINHAR OS PARAGRAFOS COM A LOGO */
-/* deixar o h2 proximo do p */
-.services-container {
-    display: flex;
-    /* padding: 2rem 2.5rem; */
-    padding-top: 1rem;
-    max-width: 100%;
-    max-height: 90vh;
-    /* margin: 0 auto; */
-    margin-left: 2.5rem;
-    margin-top: 3rem;
-    margin-right: 2.5rem;
-    /* GAMBIARRA*/
-    box-sizing: border-box;
-    overflow: hidden;
+
+@media (max-width: 767.98px) {
+    .img-profile {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .title-profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-profile {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
-
-.services-text h2 {
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1rem;
-    color: #555;
-}
-
-.services-text p {
-    margin-bottom: 2rem;
-    margin-top: 0.1rem;
-    font-size: 1rem;
-    text-align: justify;
-    /* color: #949494; */
-    color: #555;
-
-}
-
-/* 
