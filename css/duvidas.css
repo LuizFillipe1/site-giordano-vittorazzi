@@ -1,0 +1,98 @@
+/* duvidas */
+/* gio deixar mais escuro a pergunta ao clicar */
+/* alinar a box */
+/* diminuir o padding entres as perguntas */
+.faq-content {
+    /* display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; */
+}
+
+.faq-question {
+    /* flex: 0 0 calc(50% - 20px); */
+    /* Duas colunas com margem entre elas */
+    max-width: 90vw;
+
+
+    /* max-width: 90vh; */
+}
+
+.plus {
+    display: none;
+    /*gio*/
+}
+
+.panel-title {
+    color: #555;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    width: 100%;
+    /* Ajuste para ocupar toda a largura da faq-question */
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding-top: 0.9rem;
+}
+
+.panel-content {
+    color: #555;
+    font-size: 1rem;
+    margin-left: 40px;
+    padding-top: 2px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.panel:checked~.panel-content {
+    height: auto;
+    opacity: 1;
+    padding: 1px;
+    /* color: #303030; */
+    color: #000;
+}
+
+.panel:checked~.panel-title {
+    opacity: 1;
+    /* color: #303030; */
+    color: #000;
+}
+
+
+
+/* .plus {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    color: #555;
+} */
+
+/* .panel:checked~.plus {
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+} */
+
+.panel {
+    display: none;
+}

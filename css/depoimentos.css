@@ -1,0 +1,85 @@
+/* depoimentos */
+/* gio colocar os pequenos em cima um do outro */
+/* colocar seta cinza bold */
+/* corrigir todos os tamanhos de texto para o igual da pag serviços */
+/* .text-div {
+    background-color: #949494;
+    color: #5a5a5a;
+    max-height: 1400px;
+    max-width: 600px;
+} */
+
+
+.my-swiper-slide-dep {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* #swiper-wrapper-center {
+    display: flex;
+} */
+
+.depoimentos-container {
+    height: 88vh;
+    /* position: relative; */
+}
+
+.swiper-depoimentos-container {
+    height: 100%;
+
+
+}
+
+
+
+.text-div h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.text-div p {
+    color: #555;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.text-div {
+    max-width: 400px;
+    /* height: auto;
+    margin: 0 auto;
+    margin-top: 2rem; */
+
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Add hover effect if desired */
+/* 
+.swiper-button-prev {
+    background-image: url("../img/prev.png") !important;
+}
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+} */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev img {
+    transform: rotate(180deg);
+}
