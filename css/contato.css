@@ -5,21 +5,9 @@
 }
 
 .col-contato-container {
-    height: 90vh;
+    height: 88vh;
 }
 
-/* .contato-container {
-    height: 85vh;
-    width: auto;
-} */
-
-.form-message textarea {
-    max-width: 400px;
-    max-height: auto;
-    resize: none;
-    border: 0;
-    outline: 0;
-}
 
 .col {
     max-width: 400px;
@@ -28,30 +16,19 @@
     padding: 1rem;
 }
 
-.form-row input {
-    border: none;
-
+.col-custom {
+    padding-right: 5rem;
 }
 
-.form-message {
-    max-width: 400px;
-    height: auto;
-    /* border-bottom: 1px solid #5a5a5a; */
-    padding: 1rem;
-
-
-}
-
-.form-message textarea {
-    border: none;
-    width: 400px;
-
+.row {
+    padding-left: 16px;
+    --bs-gutter-x: 0;
 }
 
 
 button {
     background-color: #fff;
-    color: #949494;
+    color: #555;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -60,9 +37,34 @@ button {
 }
 
 button:hover {
-    color: #5a5a5a;
+    color: #555;
     font-weight: bold;
 }
+
+textarea {
+    resize: none;
+}
+
+
+.instagram-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    right: 40px;
+    /* background-color: #25d366; */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-instagram {
+    margin-top: 16px;
+}
+
 
 
 
@@ -72,10 +74,11 @@ button:hover {
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
+    /* background-color: #25d366; */
     color: #fff;
     border-radius: 50px;
     text-align: center;
+    /* background-color: green; */
     font-size: 30px;
     box-shadow: 1px 1px 2px #888;
     z-index: 1000;
@@ -85,11 +88,47 @@ button:hover {
     margin-top: 16px;
 }
 
-/* 
+.whatsapp-link .fa-brands {
+    color: #949494;
+}
+
+.instagram-link .fab {
+    color: #949494;
+}
+
+
+.whatsapp-link .fa-brands:hover {
+    color: #5a5a5a;
+}
+
+.instagram-link .fab:hover {
+    color: #5a5a5a;
+}
+
+
+.form-control:focus {
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
+    box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
+}
+
 
 @media screen and (max-width: 768px) {
-    .faq-question {
-        flex: 0 0 100%;
-       
+    .whatsapp-link {
+        position: unset;
+        display: inline-block;
+        margin-left: 15px;
     }
-} */
+
+    .instagram-link {
+        position: unset;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .social-query {
+        display: flex;
+        justify-content: center;
+    }
+
+}
