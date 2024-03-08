@@ -41,6 +41,10 @@ button:hover {
     font-weight: bold;
 }
 
+#contactForm {
+    color: #555;
+}
+
 textarea {
     resize: none;
 }
