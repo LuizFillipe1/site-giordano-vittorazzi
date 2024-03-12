@@ -3,13 +3,19 @@ body {
     overflow-x: hidden;
 }
 
+.container-home-media {
+    height: 90vh;
+}
 
-/* .swiper-wrapper img {} */
 
-.img-fluid {
+.swiper-slide img {
     margin-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 0.4rem;
     max-height: 90vh;
+    /* object-fit: scale-down; */
+
 }
 
 .swiper-button-prev::after,

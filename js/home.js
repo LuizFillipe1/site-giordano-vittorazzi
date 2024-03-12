@@ -2,6 +2,14 @@ var swiper = new Swiper('.home-swiper-container', {
     slidesPerView: 1,
     spaceBetween: 10,
 
+    // breakpoints: {
+    //     // when window width is >= 320px
+    //     576: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20
+    //     }
+    // },
+
 
     autoplay: {
         delay: 2500,
