@@ -34,7 +34,7 @@ body {
 }
 
 .text-div {
-    max-width: 400px;
+    max-width: 450px;
     /* height: auto;
     margin: 0 auto;
     margin-top: 2rem; */
@@ -45,6 +45,19 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+}
+
+.text-div-custom {
+    max-width: 600px;
+}
+
+.my-swiper-slide-dep-custom {
+    padding-right: 40px;
+}
+
+.my-swiper-slide-dep-custom-1 {
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .swiper-button-prev::after,

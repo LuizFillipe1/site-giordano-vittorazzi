@@ -1,7 +1,7 @@
 var swiper = new Swiper('.swiper-depoimentos-container', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 10,
-    initialSlide: 2,
+
 
 
     // centeredSlides: true,
@@ -19,8 +19,12 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
     },
     breakpoints: {
         // when window width is >= 320px
-        1500: {
-            slidesPerView: 1,
+        1450: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        945: {
+            slidesPerView: 2,
             spaceBetween: 10,
         }
     }

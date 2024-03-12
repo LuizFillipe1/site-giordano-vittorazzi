@@ -1,16 +1,9 @@
 .services-container {
     display: flex;
-    /* padding: 2rem 2.5rem; */
-    padding-top: 1rem;
-    /* max-width: 100%; */
-    /* max-height: 90vh; */
-    /* margin: 0 auto; */
+    padding-top: 0.5rem;
     margin-left: 2.5rem;
-    /* margin-top: 3rem; */
     margin-right: 2.5rem;
-    /* GAMBIARRA*/
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 
 .services-text h2 {
