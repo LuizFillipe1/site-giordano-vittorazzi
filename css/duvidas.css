@@ -2,10 +2,6 @@
     max-width: 90vw;
 }
 
-.plus {
-    display: none;
-}
-
 .panel-title {
     color: #555;
     font-weight: bold;
@@ -16,6 +12,7 @@
     display: block;
     cursor: pointer;
     padding-top: 0.9rem;
+    padding-right: 15px;
 }
 
 .panel-content {
