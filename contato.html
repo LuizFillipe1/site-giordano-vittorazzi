@@ -13,15 +13,13 @@
     <link rel="stylesheet" href="css/contato.css">
     <script src="https://kit.fontawesome.com/32e2821d75.js" defer crossorigin="anonymous"></script>
 
-
 </head>
-
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-body-tertiary-custom ">
             <div class="container-fluid">
-                <a class="navbar-brand navbar-brand-custom" href="#">
+                <a class="navbar-brand navbar-brand-custom" href="index">
                     <img src="/img/logo-min.png" alt="Logo" width="120" height="auto"
                         class="d-inline-block align-text-top">
 
@@ -62,7 +60,6 @@
         <div class="contato-container">
             <div class="row ">
                 <div class="col-6 col align-self-end col-contato-container d-none d-md-block">
-                    <!-- Bootstrap 5 starter form -->
                     <form id="contactForm">
                         <div class="mb-3 row align-items-center">
                             <label for="nome" class="col-sm-2 col-form-label text-nowrap col-custom ">Seu nome:</label>
@@ -78,19 +75,14 @@
                             </div>
                         </div>
                         <div class="mb-3 row align-items-center">
-                            <label class="col-sm-2 col-form-label mb-0 text-nowrap col-custom"
+                            <label class="col-sm-2 col-form-label mb-0 text-nowrap col-custom align-self-start"
                                 for="message">Mensagem:</label>
                             <div class="col">
                                 <textarea class="form-control border" id="message" type="text" placeholder=""
                                     style="height: 10rem;"></textarea>
                             </div>
                         </div>
-                        <!-- Message input -->
-
-                        <!-- Form submit button -->
-                        <div class="d-grid">
-                            <button class="btn" type="submit">Enviar</button>
-                        </div>
+                        <button class="btn text-start" type="submit">Enviar</button>
                     </form>
                 </div>
 
@@ -98,12 +90,14 @@
                     <div class="social-container">
                         <a class="instagram-link" href="https://www.instagram.com/giordanovittorazzi/" target="_blank">
                             <i class="fab fa-instagram"></i>
+                            <div class="msg-insta">@giordanovittorazzi</div>
                         </a>
                     </div>
                     <div class=" social-container">
                         <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5527999142909"
                             target="_blank">
                             <i class="fa-brands fa-whatsapp"></i>
+                            <div class="msg">Coverse com Giordano</div>
                         </a>
                     </div>
                 </div>
@@ -113,20 +107,20 @@
         <!-- media query -->
         <div class="d-block d-md-none">
             <div class="col col-contato-container align-self-end">
-                <!-- Bootstrap 5 starter form -->
+
                 <form id="contactForm">
                     <div class="mb-3 row align-items-center">
                         <label for="nome" class="col-sm-2 col-form-label text-nowrap col-custom">Seu nome:</label>
                         <div class="col">
                             <input type="text" class="form-control border-0 border-bottom border-end" id="nome"
-                                placeholder="Seu nome">
+                                placeholder="">
                         </div>
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="email" class="col-sm-2 col-form-label mb-0 text-nowrap col-custom">E-mail:</label>
                         <div class="col">
                             <input type="email" class="form-control border-0 border-bottom border-end" id="email"
-                                placeholder="Seu e-mail">
+                                placeholder="">
                         </div>
                     </div>
                     <div class="mb-3 row align-items-center">
@@ -134,15 +128,10 @@
                             for="message">Mensagem:</label>
                         <div class="col">
                             <textarea class="form-control border-0 border-bottom border-end" id="message" type="text"
-                                placeholder="Digite sua mensagem" style="height: 10rem;"></textarea>
+                                placeholder="" style="height: 10rem;"></textarea>
                         </div>
                     </div>
-                    <!-- Message input -->
-
-                    <!-- Form submit button -->
-                    <div class="d-grid">
-                        <button class="btn" type="submit">Enviar</button>
-                    </div>
+                    <button class="btn text-start" type="submit">Enviar</button>
                 </form>
                 <div class="social-query">
                     <div class="social-container">
