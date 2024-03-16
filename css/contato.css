@@ -27,9 +27,7 @@
 
 .btn {
     border-radius: 12px;
-    -webkit-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
-    -moz-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
-    box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
+    box-shadow: 1px 1px 2px #888;
 }
 
 button:hover {
@@ -112,9 +110,7 @@ textarea {
 
 .form-control,
 .form-control:focus {
-    -webkit-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
-    -moz-box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
-    box-shadow: 2px 2px 8px 0px rgba(148, 148, 148, 1);
+    box-shadow: 1px 1px 2px #888;
 
 }
 

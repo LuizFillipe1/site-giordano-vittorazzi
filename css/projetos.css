@@ -63,6 +63,11 @@
 
 }
 
+#espaco-de-convivencia {
+    white-space: wrap;
+    text-align: center;
+}
+
 .gallery-items:hover .hover-text {
     display: block;
 }
