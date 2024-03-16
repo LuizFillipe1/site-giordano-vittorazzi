@@ -7,12 +7,12 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .depoimentos-container {
-    height: 88vh;
+    margin-top: 90px;
 }
 
 .swiper-depoimentos-container {
@@ -39,6 +39,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 .text-div-custom {
@@ -69,18 +70,40 @@ body {
 }
 
 @media (max-width: 767.98px) {
+    .my-swiper-slide-dep {
+        height: 88vh;
+        display: flex;
+        align-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .text-div {
         max-width: 500px;
+    }
+
+    .depoimentos-container {
+        margin-top: 0px;
+        justify-content: center;
+        text-align: center;
+
     }
 }
 
 @media (max-width: 575.98px) {
     .text-div {
         max-width: 400px;
+        margin-bottom: 0;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
         opacity: 0.2;
+    }
+
+    .depoimentos-container {
+        margin-top: 0px;
+        height: 88vh;
     }
 }
