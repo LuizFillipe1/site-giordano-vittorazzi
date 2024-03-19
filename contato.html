@@ -13,15 +13,7 @@
     <link rel="stylesheet" href="css/contato.css">
     <script src="js/contato.js" defer></script>
     <script src="https://kit.fontawesome.com/32e2821d75.js" defer crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "OP2DUFrrrLbyIRAKm",
-            });
-        })();
-    </script>
+
 
 </head>
 
@@ -124,26 +116,27 @@
                         <label for="user_name_m" class="col-sm-2 col-form-label text-nowrap col-custom">Seu
                             nome:</label>
                         <div class="col">
-                            <input type="text" class="form-control border-0 border-bottom border-end" id="user_name_m">
+                            <input type="text" name="user_name_m" class="form-control border-0 border-bottom border-end"
+                                id="user_name_m">
                         </div>
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label for="user_email_m"
                             class="col-sm-2 col-form-label mb-0 text-nowrap col-custom">E-mail:</label>
                         <div class="col">
-                            <input type="email" class="form-control border-0 border-bottom border-end"
-                                id="user_email_m">
+                            <input type="email" name="user_email_m"
+                                class="form-control border-0 border-bottom border-end" id="user_email_m">
                         </div>
                     </div>
                     <div class="mb-3 row align-items-center">
                         <label class="col-sm-2 col-form-label mb-0 text-nowrap col-custom"
                             for="message_m">Mensagem:</label>
                         <div class="col">
-                            <textarea class="form-control border-0 border-bottom border-end" id="message_m" type="text"
-                                style="height: 10rem;"></textarea>
+                            <textarea class="form-control border-0 border-bottom border-end" name="message_m"
+                                id="message_m" type="text" style="height: 10rem;"></textarea>
                         </div>
                     </div>
-                    <button id="button-m" class="btn text-start" type="submit">Enviar</button>
+                    <button id="button-m" class="btn text-start" type="submit" value="Enviar">Enviar</button>
                 </form>
                 <div class="social-query">
                     <div class="social-container">
@@ -162,7 +155,15 @@
         </div>
 
     </main>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "OP2DUFrrrLbyIRAKm",
+            });
+        })();
+    </script>
 </body>
 
 </html>
