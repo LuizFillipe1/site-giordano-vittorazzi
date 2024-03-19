@@ -64,7 +64,7 @@
 }
 
 #espaco-de-convivencia {
-    white-space: wrap;
+    /* white-space: wrap; */
     text-align: center;
 }
 
