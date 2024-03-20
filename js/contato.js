@@ -4,17 +4,17 @@ document.getElementById('contact-form')
     .addEventListener('submit', function (event) {
         event.preventDefault();
 
-        btn.value = 'Enviando';
+        btn.innerHTML = 'Enviando...';
 
         const serviceID = 'default_service';
         const templateID = 'template_yvnmemg';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                btn.value = 'E-mail enviado';
+                btn.innerHTML = 'E-mail Enviado!';
                 alert('Enviado!');
             }, (err) => {
-                btn.value = 'Enviar';
+                btn.innnerHTML = 'Enviar';
                 alert(JSON.stringify(err));
             });
     })
@@ -23,17 +23,17 @@ document.getElementById('contactForm')
     .addEventListener('submit', function (event) {
         event.preventDefault();
 
-        btnm.value = 'Enviando';
+        btnm.innerHTML = 'Enviando...';
 
         const serviceID = 'default_service';
         const templateID = 'template_b1jw95l';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                btnm.value = 'E-mail enviado';
+                btnm.innerHTML = 'E-mail enviado!';
                 alert('Enviado!');
             }, (err) => {
-                btnm.value = 'Enviar';
+                btnm.innnerHTML = 'Enviar';
                 alert(JSON.stringify(err));
             });
     })
