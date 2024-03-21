@@ -1,0 +1,52 @@
+html,
+body {
+    overflow: hidden;
+}
+
+.container-home-media {
+    height: 90vh;
+    margin-top: 10px;
+
+}
+
+.container-home {
+    /* height: 88vh; */
+    margin-top: 10px;
+}
+
+.center-image-container {
+
+    /* Defina a altura desejada */
+    overflow: hidden;
+    object-fit: scale-down;
+
+}
+
+.center-image-container img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide img {
+    /* margin-top: 3px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border-radius: 0.4rem;
+    max-height: 88vh;
+    /* object-fit: scale-down; */
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev img {
+    transform: rotate(180deg);
+}
+
+/* @media (max-width: 576px) {
+
+} */
