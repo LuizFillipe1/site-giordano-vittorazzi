@@ -11,7 +11,7 @@ document.getElementById('contact-form')
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                btn.innerHTML = 'E-mail Enviado!';
+                btn.innerHTML = 'E-mail enviado!';
                 alert('Enviado!');
             }, (err) => {
                 btn.innnerHTML = 'Enviar';

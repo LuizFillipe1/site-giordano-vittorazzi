@@ -3,7 +3,10 @@ body {
     overflow: hidden;
 }
 
-.container-home-media {}
+.container-home-media {
+    height: 90vh;
+
+}
 
 .container-home {
     /* height: 88vh; */
@@ -11,21 +14,28 @@ body {
 }
 
 .center-image-container {
-
-    /* Defina a altura desejada */
-
-
+    overflow: hidden;
+    object-fit: scale-down;
+    height: 88vh;
 }
 
-.center-image-container img {}
+
+
+.center-image-container img {
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    height: 100%;
+
+}
 
 .swiper-slide img {
     /* margin-top: 3px; */
     /* padding-left: 10px;
     padding-right: 10px; */
     border-radius: 0.4rem;
-    width: 100%;
-    /* object-fit: scale-down; */
+    /* max-height: 88vh;
+    object-fit: scale-down; */
 
 }
 
