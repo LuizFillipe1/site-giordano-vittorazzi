@@ -46,14 +46,10 @@ body {
     max-width: 600px;
 }
 
-.my-swiper-slide-dep-custom {
-    padding-right: 40px;
-}
+/* .swiper-wrapper-center {
+    margin-left: 200px;
+} */
 
-.my-swiper-slide-dep-custom-1 {
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
 .swiper-button-next,
 .swiper-button-prev {

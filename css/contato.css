@@ -182,4 +182,10 @@ textarea {
         max-width: none;
     }
 
+    .button-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
 }

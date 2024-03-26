@@ -7,8 +7,7 @@ var swiper = new Swiper('.swiper-depoimentos-container', {
     },
     breakpoints: {
         1220: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 1,
         }
     }
 });
