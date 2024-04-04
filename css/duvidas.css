@@ -7,12 +7,10 @@
     font-weight: bold;
     margin-left: 40px;
     font-size: 1.1rem;
-    /* width: 100%; */
     position: relative;
     display: block;
     cursor: pointer;
     padding-top: 0.9rem;
-    /* padding-right: 15px; */
 }
 
 .panel-content {
