@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giordano Vittorazzi</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.svg">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <script src="js/contato.js" defer></script>
+    <script src="https://kit.fontawesome.com/32e2821d75.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-body-tertiary-custom ">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-brand-custom" href="index">
+                    <img src="/img/logo-min.png" alt="Logo" width="120" height="auto"
+                        class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto navbar-nav-custom ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="duvidas">Dúvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contato-container">
+            <div class="row ">
+                <div class="col-6 col align-self-end col-contato-container d-none d-md-block">
+                    <form id="contact-form">
+                        <div class="mb-3 row align-items-center">
+                            <label for="user_name" class="col-sm-2 col-form-label text-nowrap col-custom ">Seu
+                                nome:</label>
+                            <div class="col">
+                                <input type="text" class="form-control border " id="user_name" name="user_name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <label for="user_email"
+                                class="col-sm-2 col-form-label mb-0 text-nowrap col-custom">E-mail:</label>
+                            <div class="col">
+                                <input type="email" class="form-control border" id="user_email" name="user_email">
+                            </div>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <label class="col-sm-2 col-form-label mb-0 text-nowrap col-custom align-self-start"
+                                for="message">Mensagem:</label>
+                            <div class="col">
+                                <textarea class="form-control border" id="message" type="text" name="message"
+                                    style="height: 10rem;"></textarea>
+                            </div>
+                        </div>
+                        <button id="button" class="btn text-start" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-6 col-contato-container d-none d-md-block ">
+                    <div class="social-container">
+                        <a class="instagram-link" href="https://www.instagram.com/giordanovittorazzi/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <div class="msg-insta">@giordanovittorazzi</div>
+                        </a>
+                    </div>
+                    <div class=" social-container">
+                        <a class="whatsapp-link" href="https://wa.me/5527999142909" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div class="msg">Converse com Giordano</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- media query -->
+        <div class="d-block d-md-none">
+            <div class="col col-contato-container align-self-end">
+
+                <form id="contactForm">
+                    <div class="mb-3 row align-items-center">
+                        <label for="user_name_m" class="col-sm-2 col-form-label text-nowrap col-custom">Seu
+                            nome:</label>
+                        <div class="col">
+                            <input type="text" name="user_name_m" class="form-control border-0 border-bottom border-end"
+                                id="user_name_m">
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label for="user_email_m"
+                            class="col-sm-2 col-form-label mb-0 text-nowrap col-custom">E-mail:</label>
+                        <div class="col">
+                            <input type="email" name="user_email_m"
+                                class="form-control border-0 border-bottom border-end" id="user_email_m">
+                        </div>
+                    </div>
+                    <div class="mb-3 row align-items-center">
+                        <label class="col-sm-2 col-form-label mb-0 text-nowrap col-custom"
+                            for="message_m">Mensagem:</label>
+                        <div class="col">
+                            <textarea class="form-control border-0 border-bottom border-end" name="message_m"
+                                id="message_m" type="text" style="height: 10rem;"></textarea>
+                        </div>
+                    </div>
+                    <div class="button-center">
+                        <button id="button-m" class="btn text-start" type="submit" value="Enviar">Enviar</button>
+                    </div>
+                </form>
+                <div class="social-query">
+                    <div class="social-container">
+                        <a class="instagram-link" href="https://www.instagram.com/giordanovittorazzi/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class=" social-container">
+                        <a class="whatsapp-link" href="https://wa.me/5527999142909" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "OP2DUFrrrLbyIRAKm",
+            });
+        })();
+    </script>
+</body>
+
+</html>

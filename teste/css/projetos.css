@@ -1,0 +1,147 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-items {
+    display: relative;
+    width: 260px;
+    height: 180px;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 1px #ddd;
+    flex-grow: 1;
+    transition: transform 0.3s linear;
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hide {
+    display: none;
+}
+
+.gallery-items:hover {
+    transform: scale(1.1);
+    filter: opacity(60%);
+    text-transform: uppercase;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    color: #000;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 0.8rem;
+
+}
+
+.casa-de-repouso {
+    text-align: center;
+}
+
+.gallery-items:hover .hover-text {
+    display: block;
+}
+
+.mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 2rem;
+    position: relative;
+
+}
+
+.image-container {
+    position: relative;
+}
+
+.mobile img {
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+.next-buttom {
+    position: absolute;
+    border: none !important;
+    box-shadow: none !important;
+    bottom: 100px;
+    right: 10px;
+    opacity: 0.8;
+    font-size: 0.1rem;
+}
+
+
+.img-thumb-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+}
+
+@media (max-width: 767.98px) {
+    .gallery-container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-items {
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 5px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.whatsapp-link .fa-brands {
+    color: #949494;
+}
+
+.whatsapp-link .fa-brands:hover,
+.msg:hover {
+    color: #5a5a5a;
+}
