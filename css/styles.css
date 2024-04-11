@@ -1,6 +1,7 @@
 @font-face{
     font-family: 'Calibri Light';
     src: url("../fonts/calibril.ttf");
+    font-display: fallback;
 }
 * {
     padding: 0;
